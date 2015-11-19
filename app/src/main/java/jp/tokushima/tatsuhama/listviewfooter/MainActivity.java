@@ -20,8 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
         mListView = (ListView) findViewById(R.id.listView);
         mFooterView = createFooterView();
-        mListView.setAdapter(createAdapter());
         mListView.addFooterView(mFooterView);
+        mListView.setAdapter(createAdapter());
         new Handler(getMainLooper()).postDelayed(new Runnable() {
             @Override
             public void run() {
